@@ -1,0 +1,11 @@
+**/.env
+**/config.env
+**/__pycache__/
+**/dist/
+**/state/
+**/storage/
+**/vendor/
+*.pyc
+*.zip
+*.png
+*.sqlite

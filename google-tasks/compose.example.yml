@@ -1,0 +1,19 @@
+services:
+  google-tasks:
+    build: .
+    env_file: .env
+    ports:
+      - "127.0.0.1:8081:8080"
+    volumes:
+      - google_task_tokens:/app/storage
+    networks:
+      - larapaper
+    restart: unless-stopped
+
+networks:
+  larapaper:
+    external: true
+    name: ${LARAPAPER_NETWORK:-larapaper_default}
+
+volumes:
+  google_task_tokens:

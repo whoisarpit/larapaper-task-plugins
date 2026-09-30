@@ -1,0 +1,7 @@
+.env
+config.env
+dist
+state
+__pycache__
+recipe
+README.md

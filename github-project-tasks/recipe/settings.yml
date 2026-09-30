@@ -1,0 +1,11 @@
+name: GitHub Project Tasks
+id: 01a0f0d2-5bb3-77be-977e-8ae5622a3f1e
+strategy: polling
+refresh_interval: 5
+polling_url: "{{feed_url}}"
+polling_verb: get
+custom_fields:
+  - keyname: feed_url
+    field_type: text
+    name: Connector feed URL
+    default: "http://github-project:8080/tasks"

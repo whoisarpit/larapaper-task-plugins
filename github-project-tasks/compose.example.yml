@@ -1,0 +1,20 @@
+services:
+  github-project:
+    build: .
+    env_file: config.env
+    environment:
+      GITHUB_TOKEN_FILE: /run/secrets/github-project.env
+    volumes:
+      - ./.env:/run/secrets/github-project.env:ro
+      - github_project_state:/app/state
+    networks:
+      - larapaper
+    restart: unless-stopped
+
+networks:
+  larapaper:
+    external: true
+    name: ${LARAPAPER_NETWORK:-larapaper_default}
+
+volumes:
+  github_project_state:

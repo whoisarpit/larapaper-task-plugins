@@ -1,0 +1,14 @@
+name: Google Tasks
+strategy: polling
+refresh_interval: 15
+polling_url: "{{feed_url}}?list={{task_list_id}}"
+polling_verb: get
+custom_fields:
+  - keyname: task_list_id
+    field_type: text
+    name: Google Tasks list ID
+    default: ""
+  - keyname: feed_url
+    field_type: text
+    name: Connector Feed URL
+    default: "http://google-tasks:8080/tasks"
