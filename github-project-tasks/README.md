@@ -5,6 +5,8 @@ The screen shows items assigned to one account, with `NEW` or `UPDATED`
 indicators for two hours after a change. Items moved to Done during the past
 24 hours appear below active work. The first fetch establishes a baseline.
 
+![GitHub Project Tasks screen with invented tasks](../screenshots/github-project-tasks.png)
+
 The connector reads item titles, assignees, and Project Status. For completed
 items, the displayed time is when the Project Status field was last changed.
 The screen fits ten items and prioritizes marked active items.

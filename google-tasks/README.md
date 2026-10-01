@@ -4,6 +4,8 @@ A read-only Google Tasks feed and LaraPaper recipe. It shows open tasks,
 subtasks, and tasks completed in the last 24 hours. Credentials stay in the
 connector; LaraPaper receives only the task feed.
 
+![Google Tasks screen with invented tasks](../screenshots/google-tasks.png)
+
 ## Set up Google
 
 1. In a Google Cloud project, enable the Google Tasks API and configure an

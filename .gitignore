@@ -9,3 +9,4 @@
 *.zip
 *.png
 *.sqlite
+!screenshots/*.png
